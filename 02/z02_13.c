@@ -14,9 +14,15 @@ int num2;
 scanf("%d %d", &num1, &num2); //atribuindo nome aos bois
 
 if (num1 == num2){
-	printf("Sao iguais, claro");
+	printf("Sao iguais, claro\n");
 } else {
-	printf("Sao diferentes, obvio");
-	}
+	printf("Sao diferentes, obvio\n");
+	if (num1 > num2){
+		printf("E digo mais... %d eh maior do que %d", num1, num2);
+	} else {
+		printf("Teimo em dizer que %d eh maior do que %d", num2, num1);
+	} 	
+}
+	
 return 0;
 }
