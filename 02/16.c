@@ -15,7 +15,7 @@ float  div;  //compare float(%.6f) vs double(%.16f)
         div = y/x;
     }*/
     div = (float)x/y;  //(double)
-    printf("\nQuotient:\t%.6f", div);
+    printf("\nQuotient:\t%.20f", div);
 
     printf("\nRemainder:\t%d = %d (mod %d)", x, x%y, y);
 
