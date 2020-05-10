@@ -1,13 +1,13 @@
 #include <stdio.h>
-//convert seconds to h:m:s:ms
+//convert milisec to d:h:m:s:ms
 int main (void)
 {
-    //receive ms
-    int h, m, s, ms;
-    h=0; m=0; s=0;
-    printf("\nGimme the ms: ");
 
+    int d, h, m, s, ms;
+    printf("\nGimme the ms: ");
+	//receive ms
     scanf("%d", &ms);
+
     s = ms/1000; //get the integer
     ms = ms%1000;// get the remainder
 
@@ -15,9 +15,12 @@ int main (void)
     s = s%60;
 
     h = m/60;
-    m=m%60;
+    m = m%60;
 
-    printf("\n%dh:%dm:%ds:%dms\n",h,m,s,ms);
+    d = h/24;
+    h = h%24;
+
+    printf("\n%dd:%dh:%dm:%ds:%dms\n",d,h,m,s,ms);
 
 
     return 0;
