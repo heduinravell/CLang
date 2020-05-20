@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main(void) {
-printf("comente a vontade aqui\nesta eh outra linha\nfsafsafsa");
+printf("comentario\tde\timpacto");
 return 0;
 }
