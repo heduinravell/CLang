@@ -2,9 +2,9 @@
 
 int main(void){
 	int nPartido;
-	printf("%s", "Informe o numero do seu Partido:\n");
+	printf("%s", "Informe numero do seu Partido:\n");
 	scanf("%d", &nPartido);
-	printf("%d\n", nPartido);
+	printf("%d\t", nPartido);
 
 return 0;
 }
